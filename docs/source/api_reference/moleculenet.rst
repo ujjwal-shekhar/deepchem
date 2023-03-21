@@ -230,6 +230,8 @@ USPTO Datasets
 --------------
 
 .. autofunction:: deepchem.molnet.load_uspto
+.. warning::
+    The UPSTO dataset only supports the use of RxnFeaturizer and DummyFeaturizer. If you specify any other featurizer, it will be overridden and RxnFeaturizer will be used instead. Please make sure to use one of the supported featurizers to ensure proper loading of the dataset.
 
 UV Datasets
 -----------
